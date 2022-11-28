@@ -1,0 +1,40 @@
+.section__clients {
+    display: block;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 7px;
+    fill: #afb1b8;
+    padding: 8px 7px;
+}
+
+
+
+.section__clients--box {
+    align-content: center;
+    justify-content: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    color: #afb1b8;
+
+    &:hover {
+        fill: var(--brand-color);
+        cursor: pointer;
+        border-color: var(--brand-color);
+        transition: 250ms var(--cubic-bezier);
+    }
+}
+
+.section__clients--icon {
+    width: 106px;
+    height: 60px;
+    align-items: center;
+    align-content: center;
+    justify-self: center;
+    color: #afb1b8
+}
+

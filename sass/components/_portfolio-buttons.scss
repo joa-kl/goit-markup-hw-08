@@ -1,0 +1,33 @@
+.buttons {
+    gap: 8px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 572px;
+    height: 54px;
+    margin: 0 auto;
+    padding: 0px;
+    margin-bottom: 34px;
+    list-style: none;
+    
+    &__btn {
+        border: 0;
+        letter-spacing: 0.03em;
+        font-size: 16px;
+        font-weight: 500;
+        Height: 38px;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        border-radius: 4px;
+        padding: 0px 22px;
+        cursor: pointer;
+        
+        &:hover,
+        &:focus {
+            color: var(--white);
+            background-color: var(--brand-color);
+            transition: 250ms var(--cubic-bezier);
+        }
+        
+    }
+}

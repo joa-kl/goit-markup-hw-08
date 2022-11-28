@@ -1,0 +1,78 @@
+body {
+    color: var(--primal-text);
+    font-family: Roboto, sans-serif;
+}
+
+// img {
+//     display: block;
+// }
+
+.section__container {
+    width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    align-items: center;
+    padding: 0px 15px;
+
+    @media screen and (min-width: 768px) {
+            width: 768px
+        }
+}
+
+.section__menu {
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    gap: 30px;
+}
+
+.section {
+    padding: 94px 0;
+}
+
+.lastsection {
+    background-color: #F5F4FA;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    gap: 30px;
+}
+
+.section__heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+
+
+// OLEKSANDER 
+
+
+.container {
+    // margin-left: auto;
+    // margin-right: auto;
+    // padding-left: 15px;
+    // padding-right: 15px;
+
+    // @media screen and (min-width: 480px) {
+    //     width: 480px;
+    // }
+
+    // @media screen and (min-width: 768px) {
+    //     width: 768px;
+    // }
+
+    // @media screen and (min-width: 1200px) {
+    //     width: 1200px;
+    // }
+}

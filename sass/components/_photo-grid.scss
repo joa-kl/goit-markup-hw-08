@@ -1,0 +1,79 @@
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0px
+}
+
+.card {
+    max-width: 370px;
+    max-height: 404px;
+
+    &:hover {
+        box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+
+    &__box {
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+        width: 100%;
+        height: 294px;
+    }
+
+    &__overlay {
+        position: absolute;
+        width: 100%;
+        height: 101%;
+        background-color: rgba(33, 150, 243, 0.9);
+        transform: translateY(100%);
+        margin: 0 auto;
+        color: white;
+        font-size: 18px;
+        line-height: 1.6;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        padding-left: 24px;
+        padding-right: 45px;
+        font-weight: 400;
+        font: Roboto;
+    }
+    
+    &__descr {
+        height: 110px;
+        display: block;
+        align-content: center;
+        padding-top: 20px;
+        line-height: 2;
+        border: 1px solid #EEEEEE;
+        border-top: 0;
+    }
+
+    &__descr--title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        padding-left: 24px;
+    }
+
+    &__descr--subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.9;
+        letter-spacing: 0.03em;
+        color: var(--light-gray);
+        text-align: left;
+        margin: 0 auto;
+        min-width: 130px;
+        max-height: 19px;
+        padding-left: 24px;
+    }
+}
+
+.card__box:hover .card__overlay {
+    transform: translatey(0);
+    transition: 250ms var(--cubic-bezier);
+}
