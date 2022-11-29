@@ -2,7 +2,7 @@
 @import "./utils/global.scss";
 @import "./utils/backdrop";
 @import "./utils/hidden.scss";
-@import "./utils/features.scss";
+@import "./components/features.scss";
 
 
 @import "./components/header.scss";
@@ -14,9 +14,9 @@
 @import "./components/footer.scss";
 @import "./components/modal.scss";
 @import "./components/portfolio-buttons.scss";
-@import "./components/buttons.scss";
-@import "./components/menu-mobile.scss";
 @import "./components/photo-grid.scss";
+@import "./components/we-do.scss";
+
 
 
 

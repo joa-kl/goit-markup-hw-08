@@ -46,64 +46,71 @@
         </div>
     </header>
     <main>
-        <section class="banner">
-        <div class="heading__title">
-            <h1 >EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        </div>
+        <section class="heading">
+        <div  >
+            <div >
+            <h1 class="heading__title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+            </div>
             <button type="button" class="heading__button" data-modal-open>Zamów usługę</button>
+            </div>
+            </div>
         </section>
 
-        <section class="section container">
+<!-- scope section -->
+
+        <section class="section container features">
             <div class="section__container">
-            <div class="section__icons">
-                <svg class="section__icons--tile" width="270" height="120">
-                        <use href="./images/icons.svg#antenna-1"></use>
-                    </svg>
-                  <svg class="section__icons--tile" width="270" height="120">
-                        <use href="./images/icons.svg#clock-1"></use>
-                    </svg>
-                   <svg class="section__icons--tile" width="270" height="120">
-                        <use href="./images/icons.svg#diagram-1"></use>
-                    </svg>
-                   <svg class="section__icons--tile" width="270" height="120">
-                        <use href="./images/icons.svg#astronaut-1"></use>
-                    </svg>
-    
-            </div>   
-             <ul class="section__menu">
-                <li>
-                    <div class="paragraph">
-                    <h3 class="paragraph__heading">LOREM IPSUM</h3>
-                    <p class="paragraph__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui.
-                        Interdum et malesuada</p>
+                <ul class="features__list features__list--svg">
+
+                    <li class="features__item features__item--svg">
+                    <div class="features__wrap">
+                        <svg width="70" height="70">
+                            <use href="./images/icons.svg#antenna-1"></use>
+                        </svg>
                     </div>
-                </li>
-                <li>
-                    <div class="paragraph">
-                    <h3 class="paragraph__heading">LOREM IPSUM</h3>
-                    <p class="paragraph__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui.
-                        Interdum et malesuada</p>
+                    <h2 class="features__title feature__title--position">LOREM IPSUM</h2>
+                    <p class="features__desc features__desc--position">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui.
+                    Interdum et malesuada</p>
+                    </li>
+                    <li class="features__item features__item--svg">
+                    <div class="features__wrap">
+                        <svg width="70" height="70">
+                            <use href="./images/icons.svg#clock-1"></use>
+                        </svg>
                     </div>
-                </li>
-                <li>
-                    <div class="paragraph">
-                    <h3 class="paragraph__heading">LOREM IPSUM</h3>
-                    <p class="paragraph__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui.
-                        Interdum et malesuada</p>
+                    <h2 class="features__title feature__title--position">LOREM IPSUM</h2>
+                    <p class="features__desc features__desc--position">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui.
+                    Interdum et malesuada</p>
+                    </li>
+                    <li class="features__item features__item--svg">
+                    <div class="features__wrap">
+                        <svg width="70" height="70">
+                            <use href="./images/icons.svg#diagram-1"></use>
+                        </svg>
                     </div>
-                </li>
-                <li>
-                    <div class="paragraph">
-                    <h3 class="paragraph__heading">LOREM IPSUM</h3>
-                    <p class="paragraph__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui.
-                        Interdum et malesuada</p>
+                    <h2 class="features__title feature__title--position">LOREM IPSUM</h2>
+                    <p class="features__desc features__desc--position">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui.
+                    Interdum et malesuada</p>
+                    </li>
+                    <li class="features__item features__item--svg">
+                    <div class="features__wrap">
+                        <svg width="70" height="70">
+                            <use href="./images/icons.svg#astronaut-1"></use>
+                        </svg>
                     </div>
-                </li>
-            </ul>
+                    <h2 class="features__title feature__title--position">LOREM IPSUM</h2>
+                    <p class="features__desc features__desc--position">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui.
+                    Interdum et malesuada</p>
+                    </li>
+
+                </ul>
         </section>
 
-        <section>
+
+
+        <section class="scope">
         <div class="section__container">
+         
             <h2 class="section__heading">Czym się zajmujemy</h2>
             <div class="section__container-activities">
             <ul class="section__menu photos-activites">
@@ -134,14 +141,18 @@
         </div>
         </section>
 
+<!-- team-section -->
+
         <section class="section lastsection">
             <div class="section__container">
             <h2 class="section__heading">Nasz zespół</h2>
             <div class="team-heading">
-            <ul class="section__menu">
+            <ul class="section__menu--team">
                 <li>
-                    <div class="section__menu--team-card ">
-                        <img src="./images/Product Designer.jpg" alt="Product Designer" width="270" height="260"/>
+                    <div class="section__menu--team-card">
+                      
+                        <img class="team-member" src="./images/product designer_sm_1x.jpg" alt="Product Designer" width="270" height="260"/>
+
                         <div class="menu__team-card--tile">
                             <b class="menu__team-card--name">Joe Doe</b>
                             <p class="menu__team-card--title">Product Designer</p>
@@ -172,7 +183,12 @@
                         
                     </div>
                 </li>
+                </picture>
                 <li>
+                    
+                        <source media="(min-width: 1200px)" srcset="" type="image/jpg" />
+                        <source media="(min-width: 768px)" srcset="" type="image/jpg" />
+                        <source media="(max-width: 767px)" srcset="" type="image/jpg" />
                     <div class="section__menu--team-card ">
                         <img src="./images/Frontend.jpg" alt="Frontend Developer" width="270" height="260" />
                         <div class="menu__team-card--tile">
@@ -205,6 +221,10 @@
                         </div>
                 </li>
                 <li>
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="" type="image/jpg" />
+                        <source media="(min-width: 768px)" srcset="" type="image/jpg" />
+                        <source media="(max-width: 767px)" srcset="" type="image/jpg" />
                     <div class="section__menu--team-card ">
                         <img src="./images/Marketing.jpg" alt="Marketing" width="270" height="260" />
                         <div class="menu__team-card--tile">
@@ -235,6 +255,10 @@
                         </div>
                     </div>
                 <li>
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="" type="image/jpg" />
+                        <source media="(min-width: 768px)" srcset="" type="image/jpg" />
+                        <source media="(max-width: 767px)" srcset="" type="image/jpg" />
                     <div class="section__menu--team-card ">
                     <img src="./images/UI Designer.jpg" alt="UI Designer" width="270" height="260"/>
                         <div class="menu__team-card--tile">
@@ -268,6 +292,9 @@
             </ul>
         </div>
        </section>
+
+<!-- clients section -->
+
         <section class="section our-clients">
             <div class="section__container ">
                 <h2 class="section__heading">Nasi klienci</h2>
@@ -313,6 +340,9 @@
         </section>
 
     </main>
+
+<!-- footer  -->
+
     <footer class="footersection">
         <div class="footersection__container">
             <div class="footersection__contact">

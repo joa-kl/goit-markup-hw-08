@@ -8,14 +8,18 @@ body {
 // }
 
 .section__container {
-    width: 1200px;
+    max-width: 1200px;
     box-sizing: border-box;
     margin: 0 auto;
     align-items: center;
     padding: 0px 15px;
 
     @media screen and (min-width: 768px) {
-            width: 768px
+        min-width: 768px;
+        }
+    
+    @media screen and (min-width: 1200px) {
+        min-width: 1200px;
         }
 }
 
@@ -33,6 +37,8 @@ body {
 
 .lastsection {
     background-color: #F5F4FA;
+   
+
 }
 
 .list {

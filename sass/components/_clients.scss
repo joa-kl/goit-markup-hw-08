@@ -1,15 +1,23 @@
 .section__clients {
-    display: block;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
-    padding: 7px;
     fill: #afb1b8;
-    padding: 8px 7px;
-}
+    justify-content: center;
 
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
+       @media screen and (min-width: 1200px) {
+            display: flex;
+            flex-wrap: nowrap;
+       }
+    }
 
 .section__clients--box {
     align-content: center;
