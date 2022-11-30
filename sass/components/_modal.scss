@@ -3,11 +3,17 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
-    min-height: 581px;
+    width: 450px;
+    height: 609px;
     background-color: #fff;
     border-radius: 4px;
     display: block;
+
+    @media screen and (min-width: 1200px){
+        width: 528px;
+        height: 581px;
+    }
+    
 }
 
 .modal__close-btn {
@@ -26,7 +32,7 @@
 .modal__button {
     width: 200px;
     height: 50px;
-    margin: 30px 124px 40px;
+    margin: 30px 90px 40px;
     color: #fff;
     background-color: var(--brand-color);
     border: 0;
@@ -36,6 +42,10 @@
     letter-spacing: 0.06em;
     cursor: pointer;
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+
+    @media screen and (min-width: 1200px) {
+        margin: 30px 124px 40px;
+    }
 
     &:focus,
     &:hover {
@@ -50,13 +60,20 @@
     color: var(--black);
     margin-top: 40px;
     margin-bottom: 30px;
+    padding-inline: 40px;
+    letter-spacing: .03em;
 }
 
 .signup-form {
-    width: 448px;
+    width: 370px;
     align-content: center;
     margin-inline: 40px;
     height: 342px;
+    
+    @media screen and (min-width: 1200px) {
+        width: 448px;
+    }
+    
 }
 
 .modal-feedback:focus {
@@ -123,12 +140,18 @@
 }
 
 .section__container-checkbox {
-    width: 418px;
+    // width: 418px;
     position: relative;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 0.03em;
     color: var(--light-gray);
+
+    @media screen and (min-width: 1200px){
+    font-size: 14px;
+    }
+    
+
 }
 
 .checkbox {
@@ -141,6 +164,7 @@
     opacity: 0;
     height: 10px;
     width: 10px;
+
 }
 
 .checkbox__checkmark {
@@ -150,20 +174,30 @@
     width: 16px;
     border: 2px solid var(--black);
     background-color: #fff;
-    margin-left: 15px;
+    margin-left: 5px;
     border-radius: 2px;
     top: 1px;
+
+    @media screen and (min-width: 1200px){
+        margin-left: 15px;
+    }
+    
 }
 
 .checkbox__checkmark--icon {
     background-color: var(--brand-color);
     opacity: 0;
-    left: 17px;
+    left: 7px;
     height: 15px;
     width: 16px;
     position: absolute;
     top: 1px;
     border-radius: 2px;
+   
+    @media screen and (min-width: 1200px) {
+        left: 17px;
+    }
+   
 }
 
 .section__container-checkbox input:checked~.checkbox__checkmark {
@@ -175,7 +209,12 @@
 }
 
 .policy {
-    margin-left: 22px;
+    margin-left: 15px;
+
+    @media screen and (min-width: 1200px){
+        margin-left: 22px;
+    }
+    
 }
 
 .policy__style {

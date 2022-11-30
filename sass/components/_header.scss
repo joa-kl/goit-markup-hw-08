@@ -13,8 +13,12 @@
         font-size: 26px;
         line-height: 1.2;
         text-decoration: none;
-        width: 145px;
+       
         height: 31px;
+
+        @media screen and (min-width: 1200px) {
+            width: 145px;
+        }
     }
 
     &__logo--front {
@@ -58,6 +62,7 @@
         text-decoration: none;
         font-size: 14px;
         line-height: 1.1;
+        fill: var(--light-gray);
 
         &:hover,
         &:focus {
@@ -77,13 +82,21 @@
     }
 
     &__container {
-        width: 1200px;
+        width: 480px;
         box-sizing: border-box;
         margin: 0 auto;
         justify-content: space-between;
         align-items: center;
         padding: 0px 15px;
         display: flex;
+
+        @media screen and (min-width: 768px){
+            width: 768px;
+        }
+
+        @media screen and (min-width: 1200px){
+            width: 1200px;
+        }
     }
 
     &__container--logo-and-nav {
@@ -94,21 +107,63 @@
     }
 
     &__nav {
-        justify-content: space-between;
-        align-items: center;
-        width: 254px;
-        height: 16px;
-        margin-left: 0 auto;
+        // justify-content: space-between;
+        // align-items: center;
+        // width: 254px;
+        // height: 16px;
+        // margin-left: 0 auto;
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            // justify-content: space-between;
+            // align-items: center;
+            // width: 254px;
+            // height: 16px;
+            // margin-left: 0 auto;
+        display: flex;
+        gap: 30px;
+        }
     }
 
     &__contact {
         justify-content: space-between;
         align-items: center;
-        height: 16px;
+        // height: 16px;
         display: flex;
         font-weight: bold;
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+        
+        
+        @media screen and (min-width: 768px) {
+            flex-wrap: wrap;
+            margin-left: 101px;
+            list-style: none;
+                display: flex;
+                padding: 0px;
+                
+                // gap: 30px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            gap: 30px;
+        }
+    }
+
+    &__contact--phone {
+        @media screen and (min-width: 768px){
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 0;
     }
 }
+}
+
 
 .header__contact--email:hover,
 .header__contact--phone:hover {
@@ -213,4 +268,3 @@
 //     & {
 //         border-bottom: 1px solid #ececec;
 //     }
-// }
