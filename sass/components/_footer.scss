@@ -1,20 +1,58 @@
 .footersection {
     background-color: var(--gray);
     /* width: 1600px; */
-    height: 252px;
-    padding-top: 60px;
+    padding: 60px 0;
 
     &__container {
-        width: 1200px;
         box-sizing: border-box;
         margin: 0 auto;
         align-items: center;
         padding: 0px 15px;
-        display: flex;
+        
+        
+
+        @media screen and (min-width: 480px) {
+            width: 480px;
+            text-align: center;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 768px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            text-align: center;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 1200px;
+            flex-wrap: wrap;
+            align-items: baseline;
+            display: flex;
+            
+        }
+    }
+
+    &__social {
+        margin-right: auto;
+        margin-bottom: 60px;
     }
 
     &__contact {
-        margin-right: 70px;
+        margin-bottom: 60px;
+        text-align: center;
+
+        @media screen and (min-width: 768px){
+            margin-right: 165px;
+            margin-left: 76px;
+        }
+
+        @media screen and (min-width: 1200px) {
+        margin-right: 80px;
+        margin-bottom: 0px;
+        margin-left: 0;
+        text-align: left;
+        }
     }
 
     &__logo {
@@ -56,7 +94,12 @@
     }
 
     &__newsletter {
-        display: flex;
+        display: block;
+        margin: 0 auto;
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+        }
     }
 
     &_contactdetails {
@@ -78,6 +121,11 @@
         width: 206px;
         height: 56px;
         margin: 0 auto;
+        margin-bottom: 60px;
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 0;
+        }
 
         &--icon {
             width: 44px;
@@ -104,10 +152,18 @@
 
     &__form {
         display: block;
-        width: 570px;
-        height: 86px;
-        margin-top: -40px;
-        margin-left: 78px;
+        // width: 570px;
+        // height: 86px;
+        margin: 0 auto;
+        text-align: center;
+
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+            margin-left: 78px;
+            margin-right: 0;
+            
+        }
+        
 
         &--label {
             color: white;
@@ -117,7 +173,8 @@
         }
 
         &--input {
-            width: calc(100% - 210px);
+            // width: calc(100% - 210px);
+            width: 100%;
             border-radius: 4px;
             background-color: transparent;
             border: 1px solid var(--light-gray);
@@ -127,6 +184,10 @@
             margin-right: 12px;
             color: var(--light-gray);
             outline: 0;
+
+            @media screen and (min-width:1200px) {
+                width: 358px;
+            }
         }
 
         &--button {
@@ -163,6 +224,11 @@ h3 {
     font-weight: 700;
     font-size: 14px;
     color: #FFFFFF;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .footer-sm {
