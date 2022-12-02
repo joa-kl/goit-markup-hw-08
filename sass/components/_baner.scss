@@ -50,6 +50,7 @@
         (min-resolution: 2dppx) {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/hero-md@2x.jpg');
         }
+
     }
 
     @media screen and (min-width: 1200px) {
@@ -67,6 +68,13 @@
         }
     }
 
+    @media screen and (max-width: 479px) {
+        width: 100%;
+        height: auto;
+    }
+
+    
+
    &__title {
        font-weight: 900;
        font-size: 26px;
@@ -74,7 +82,7 @@
        letter-spacing: 0.06em;
        align-items: center;
        margin: 0 auto;
-       width: 365px;
+       max-width: 365px;
 
        // height: 84px;
 
@@ -98,6 +106,10 @@
            margin: 0 auto;
            min-width: 696px;
            height: 120px;
+       }
+
+       @media screen and (max-width: 479px) {
+        font-size: 20px;
        }
 
    }
