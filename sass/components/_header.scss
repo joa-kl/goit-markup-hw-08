@@ -82,12 +82,12 @@
     }
 
     &__container {
-        width: 480px;
+        // width: 480px;
         box-sizing: border-box;
-        margin: 0 auto;
+        // margin: 0 auto;
         justify-content: space-between;
         align-items: center;
-        padding: 0px 15px;
+        // padding: 0px 15px;
         display: flex;
 
         @media screen and (min-width: 768px){
@@ -95,7 +95,7 @@
         }
 
         @media screen and (min-width: 1200px){
-            width: 1200px;
+            width: 1170px;
         }
     }
 
