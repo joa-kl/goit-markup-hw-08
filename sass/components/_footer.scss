@@ -6,10 +6,10 @@
 
     &__container {
         box-sizing: border-box;
-        margin: 0 auto;
+        // margin: 0 auto;
         align-items: center;
-        // padding: 0px 15px;
-        width: 100%;
+        padding: 0px 15px;
+        // width: 100%;
         
         
 
@@ -19,19 +19,21 @@
         }
 
         @media screen and (min-width: 768px) {
-            // width: 768px;
+            max-width: 768px;
             display: flex;
             flex-wrap: wrap;
             align-items: baseline;
             text-align: center;
             justify-content: center;
+            margin: 0 auto;
         }
 
         @media screen and (min-width: 1200px) {
-            width: 1170px;
+            max-width: 1170px;
             flex-wrap: wrap;
             align-items: baseline;
             display: flex;
+
             
         }
     }
@@ -47,10 +49,11 @@
 
         @media screen and (min-width: 768px){
             margin-right: 120px;
-            margin-left: 76px;
+            margin-left: 0;
         }
 
         @media screen and (min-width: 1200px) {
+       
         margin-right: 80px;
         margin-bottom: 0px;
         margin-left: 0;

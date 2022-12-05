@@ -9,8 +9,8 @@ body {
 
 .section__container {
     width: 100%;
-    box-sizing: border-box;
-    margin: 0 auto;
+    // box-sizing: border-box;
+    // margin: 0 auto;
     
     align-items: center;
     // padding: 0px 15px;
@@ -25,9 +25,13 @@ body {
 }
 
 .container {
-    
+    // width: 1200px;
     margin: 0 auto;
     padding: 0px 15px;
+
+    @media screen and (min-width: 1200px) {
+        padding: 0;
+    }
    
 }
 
