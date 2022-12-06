@@ -31,6 +31,7 @@
         opacity: 1;
         background-color: var(--white);
         z-index: 998;
+        
 
         @media screen and (min-width: 768px) {
             display: none;
@@ -121,11 +122,18 @@
         margin-bottom: auto;
         list-style: none;
         text-decoration: none;
+        padding-left: 0;
     }
 
     // &__item-nav:last-child {
     //   margin-bottom: 306px;
     // }
+
+    &__list-contact {
+        padding-left: 0;
+        overflow-wrap: break-word;
+    }
+
     &__link-contact-tel {
         margin-bottom: 32px;
         font-weight: 500;
@@ -175,6 +183,7 @@
         gap: 10px;
         list-style: none;
         text-decoration: none;
+        padding-left: 0;
     }
 
     &__link-social {

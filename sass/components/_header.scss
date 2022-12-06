@@ -10,7 +10,7 @@
         font-family: 'Raleway', sans-serif;
         font-style: normal;
         font-weight: 700;
-        font-size: 26px;
+        font-size: 24px;
         line-height: 1.2;
         text-decoration: none;
        
@@ -18,6 +18,7 @@
 
         @media screen and (min-width: 1200px) {
             width: 145px;
+            font-size: 26px;
         }
     }
 
@@ -58,11 +59,27 @@
     }
 
     &__contact--style {
-        color: var(--light-gray);
-        text-decoration: none;
-        font-size: 14px;
-        line-height: 1.1;
-        fill: var(--light-gray);
+
+        @media screen and (min-width: 768px) {
+            font-size: 12px;
+            text-decoration: none;
+            line-height: 1.1;
+            color: var(--light-gray);
+            // fill: var(--light-gray);
+    }
+    
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            text-decoration: none;
+            line-height: 1.1;
+            fill: var(--light-gray);
+    }
+        
+        // color: var(--light-gray);
+        // text-decoration: none;
+       
+        // line-height: 1.1;
+        // fill: var(--light-gray);
 
         &:hover,
         &:focus {
@@ -89,10 +106,10 @@
         display: flex;
     
         @media screen and (max-width: 787px) {
-    margin-left: 0;
+        margin-left: 0;
 }
         @media screen and (min-width: 768px){
-            width: 768px;
+            width: 100%;
         }
 
         @media screen and (min-width: 1200px){
@@ -103,7 +120,7 @@
     &__container--logo-and-nav {
         justify-content: flex-start;
         display: flex;
-        gap: 93px;
+        gap: 83px;
         align-items: center;
     }
 
@@ -122,7 +139,7 @@
             // height: 16px;
             // margin-left: 0 auto;
         display: flex;
-        gap: 30px;
+        gap: 60px;
         }
     }
 
@@ -140,9 +157,9 @@
         
         @media screen and (min-width: 768px) {
             flex-wrap: wrap;
-            margin-left: 101px;
+            // margin-left: 101px;
             list-style: none;
-                display: flex;
+                display: block;
                 padding: 0px;
                 
                 // gap: 30px;
@@ -150,6 +167,7 @@
 
         @media screen and (min-width: 1200px) {
             gap: 30px;
+            display: flex;
         }
     }
 
@@ -163,6 +181,7 @@
         margin-top: 0;
     }
 }
+
 }
 
 
