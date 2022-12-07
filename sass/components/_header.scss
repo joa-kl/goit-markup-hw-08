@@ -65,14 +65,12 @@
             text-decoration: none;
             line-height: 1.1;
             color: var(--light-gray);
-            // fill: var(--light-gray);
     }
     
         @media screen and (min-width: 1200px) {
             font-size: 14px;
             text-decoration: none;
             line-height: 1.1;
-            fill: var(--light-gray);
     }
         
         // color: var(--light-gray);
@@ -93,12 +91,12 @@
         }
 
         &:hover::before {
-            fill: var(--brand-color);
+            // fill: var(--brand-color);
             transition: 250ms var(--cubic-bezier);
         }
     }
 
-    &__container {
+    &__wrapper {
        
         box-sizing: border-box;
         justify-content: space-between;
@@ -117,7 +115,7 @@
         }
     }
 
-    &__container--logo-and-nav {
+    &__wrapper--logo-and-nav {
         justify-content: flex-start;
         display: flex;
         gap: 83px;
@@ -180,6 +178,14 @@
     @media screen and (min-width: 1200px) {
         margin-top: 0;
     }
+}
+
+&__contact--email {
+    fill: var(--light-gray);
+}
+
+&__contact--email:hover {
+    color: var(--brand-color);
 }
 
 }

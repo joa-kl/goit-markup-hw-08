@@ -7,7 +7,7 @@ body {
 //     display: block;
 // }
 
-.section__container {
+.section__wrapper {
     width: 100%;
     // box-sizing: border-box;
     // margin: 0 auto;
@@ -25,7 +25,7 @@ body {
 }
 
 .container {
-    // width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0px 15px;
 

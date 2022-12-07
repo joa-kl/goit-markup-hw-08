@@ -139,7 +139,7 @@
     transition: 250ms var(--cubic-bezier);
 }
 
-.section__container-checkbox {
+.signup-form__checkbox {
     // width: 418px;
     position: relative;
     cursor: pointer;
@@ -200,11 +200,11 @@
    
 }
 
-.section__container-checkbox input:checked~.checkbox__checkmark {
+.signup-form__checkbox input:checked~.checkbox__checkmark {
     display: none;
 }
 
-.section__container-checkbox input:checked~.checkbox__checkmark--icon {
+.signup-form__checkbox input:checked~.checkbox__checkmark--icon {
     opacity: 1;
 }
 
@@ -228,7 +228,7 @@
     max-width: 340px;
     min-width: 340px;
 
-@media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
     max-height: 94px;
     min-height: 94px;
     max-width: 410px;
