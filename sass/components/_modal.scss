@@ -13,6 +13,18 @@
         width: 528px;
         height: 581px;
     }
+
+    @media screen and (max-width: 479px) {
+        width: 80%;
+        // height: 80%;
+        // overflow: auto;
+    }
+
+    &__test {
+        margin: 0 auto;
+        justify-content: center;
+        justify-items: center;
+    }
     
 }
 
@@ -32,6 +44,7 @@
 .modal__button {
     width: 200px;
     height: 50px;
+    margin: 0 auto;
     margin: 30px 90px 40px;
     color: #fff;
     background-color: var(--brand-color);
@@ -47,10 +60,19 @@
         margin: 30px 124px 40px;
     }
 
+    @media screen and (max-width: 479px) {
+        // height: auto;
+        
+        justify-content: center;
+        margin-inline: calc((100% - 200px)/2);
+        margin-block: calc((100%-50px)/2);
+        
+
     &:focus,
     &:hover {
         transition: 250ms var(--cubic-bezier);
     }
+}
 }
 
 .modal__heading {
@@ -67,11 +89,15 @@
 .signup-form {
     width: 370px;
     align-content: center;
-    margin-inline: 40px;
+    margin: 0 auto;
     height: 342px;
     
     @media screen and (min-width: 1200px) {
         width: 448px;
+    }
+
+    @media screen and (max-width: 479px) {
+        width: 80%;
     }
     
 }
@@ -222,17 +248,24 @@
 }
 
 .textarea {
+    resize: none;
 
-    max-height: 94px;
-    min-height: 94px;
-    max-width: 340px;
-    min-width: 340px;
+}
+    // height: 80%;
+    // width: 80%;
 
-    @media screen and (min-width: 1200px) {
-    max-height: 94px;
-    min-height: 94px;
-    max-width: 410px;
-    min-width: 410px;
-}
- 
-}
+//     @media screen and (min-width: 480px) {
+//         max-height: 94px;
+//         min-height: 94px;
+//         max-width: 340px;
+//         min-width: 340px;
+//     }
+    
+
+//     @media screen and (min-width: 1200px) {
+//     max-height: 94px;
+//     min-height: 94px;
+//     max-width: 410px;
+//     min-width: 410px;
+// }
+
